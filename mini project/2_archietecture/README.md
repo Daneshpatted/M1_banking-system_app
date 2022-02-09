@@ -13,11 +13,11 @@
 
 
 
-# Activity_Diagram
+# Project Diagram
 
 
 
-![Activity_Diagram]https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/2_archietecture/Activity_Diagram.png
+![Activity_Diagram](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/2_archietecture/Activity_Diagram.png)
 
 
 
