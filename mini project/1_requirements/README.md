@@ -39,19 +39,19 @@ lot of competitors other better applications available with advanced
 
 ## 4 W's and 1 H
 1) Who ?
-   anyone with an electronic device with a display and has a requirement of a contact management.
+          anyone with an electronic device with a display and has a requirement of a contact management.
 
 2) What ?
-   a contact management with features like add, delete, search, display and store data to a file.
+          a contact management with features like add, delete, search, display and store data to a file.
 
 3) When ?
-   it can be used when there is no access to physical notebook and has lot of data to store.
+           it can be used when there is no access to physical notebook and has lot of data to store.
 
 4) Where ?
-   it can be used in all sectors irrespective of their field of work.
+           it can be used in all sectors irrespective of their field of work.
 
 5) How ?
-   this application was developed in C language to avoid hassle of maintaining bulky diaries.
+           this application was developed in C language to avoid hassle of maintaining bulky diaries.
 
 
 
