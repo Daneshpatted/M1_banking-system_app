@@ -24,16 +24,16 @@ The project is titled as contact-management and developed using C language. It i
 
 ## SWOT ANALYSIS
 
-STRENGTHS
+STRENGTHS ::
 easy to use application has all required features capable of storing data to a database faster access to data.
 
-WEAKNESS
+WEAKNESS ::
 lack of graphical user interface no option to change default database no scope of integration.
 
-OPPORTUNITIES
+OPPORTUNITIES ::
 required by most of the people can add more features develop a gui.
 
-THREATS
+THREATS ::
 lot of competitors other better applications available with advanced
 
 
