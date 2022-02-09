@@ -5,7 +5,7 @@ The project is titled as contact-management and developed using C language. It i
 
 
 
-#contact-mangement features::
+# contact-mangement features::
 
 1) add new contacts with inforamation such as name,phone number,address,email id
 2) list all contacts stored in file with their respective contact details
@@ -14,10 +14,13 @@ The project is titled as contact-management and developed using C language. It i
 5) delete contacts from files
 
 
-#Advantages
+# Advantages
 
 1) Improved data management
 2) Easy and faster access
 3) Better, longer-lasting customer relationship
 4) No hassle of physical maintenance of diaries
 5) Backups available in case of unexpected activities
+
+# SWOT ANALYSIS
+easy to use application has all required features capable of storing data to a database faster access to data.
