@@ -17,4 +17,4 @@
 
 ## DELETE
 ![delete](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/delete.PNG)
-![after delete list of contacts]()
+![after delete list of contacts](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/after%20delete%20list%20of%20contacts.PNG)
