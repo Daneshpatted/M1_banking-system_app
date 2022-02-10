@@ -37,7 +37,7 @@ THREATS ::
 lot of competitors other better applications available with advanced
 
 
-# 4 W's and 1 H
+## 4 W's and 1 H
 
  1) Who ?
    anyone with an electronic device with a display and has a requirement of a contact management.
@@ -53,9 +53,27 @@ lot of competitors other better applications available with advanced
 
  5) How ?
       this application was developed in C language to avoid hassle of maintaining bulky diaries.
+      
+      
+   
+ ##  High Level Requirements
+ 
+     	Description             	Status
+          
+      1)	Main Menu           	Implemented
+     	2) Data Storing        	Implemented
+	     3) Data Retrieval      	Implemented
 
+## Low Level Requirement
 
-
+                Description                                                                                                        Status                                                                                                
+1) New contact shall be added by providing all the needed information and stored into structure.	                                	Implemented
+2)	Reading contact data is be possible in 5 ways, first being by searching by first name, last name,                             	Implemented
+	 phone number email id and by printing all the contacts available		
+3)	All the data should be stored into a file when user wants to do it.	                                                          	Implemented
+4)	If user searches for an invalid key "Contact not found" message should be displayed                                           	Implemented
+5)	User shall be able to save the files, if file already exists then it should append to file                                    	Implemented
+	 and should not overwrite it and if file does not exists then it should create a new file
 
 
 
