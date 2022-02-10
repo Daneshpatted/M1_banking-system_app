@@ -16,5 +16,5 @@
 ![editing](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/editing.PNG)
 
 ## DELETE
-![delete]()
+![delete](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/delete.PNG)
 ![after delete list of contacts]()
