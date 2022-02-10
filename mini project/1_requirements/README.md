@@ -66,13 +66,13 @@ lot of competitors other better applications available with advanced
 
 ## Low Level Requirement
 
-                Description                                                                                                        Status                                                                                                
+                Description                                                                                          Status                                                                                                
 1) New contact shall be added by providing all the needed information and stored into structure.	                	Implemented
-2)Reading contact data is be possible in 5 ways, first being by searching by first name, last name,                            Implemented
+2)Reading contact data is be possible in 5 ways, first being by searching by first name, last name,               Implemented
  phone number email id and by printing all the contacts available		
-3)All the data should be stored into a file when user wants to do it.	                                                    	Implemented
-4)If user searches for an invalid key "Contact not found" message should be displayed                                           Implemented
-5)User shall be able to save the files, if file already exists then it should append to file                                    Implemented
+3)All the data should be stored into a file when user wants to do it.	                                             Implemented
+4)If user searches for an invalid key "Contact not found" message should be displayed                              Implemented
+5)User shall be able to save the files, if file already exists then it should append to file                       Implemented
   and should not overwrite it and if file does not exists then it should create a new file
 
 
