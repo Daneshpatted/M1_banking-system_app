@@ -13,7 +13,7 @@
 ![searching contact](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/searching%20contact.PNG)
 
 ## EDITING
-![editing]()
+![editing](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/4_testplan_%26_output/editing.PNG)
 
 ## DELETE
 ![delete]()
