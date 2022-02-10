@@ -16,15 +16,15 @@ int i,n,ch,l,found;
 int main()
 {
 main:
-    system("cls");    /* ************Main menu ***********************  */
-    printf("\n\t  Welcome to Contact-Management System ");
-    printf("\n\n\n\t\tMAIN MENU\n\t\t=====================\n\t\t1) Add a new Contact\n\t\t2) List all Contacts\n\t\t3) Search for contact\n\t\t4) Edit a Contact\n\t\t5) Delete a Contact\n\t\t0) Exit\n\t\t=================\n\t\t");
-    printf("Enter the choice:");
+    system("cls");    /* *****Main menu *******  */
+    printf("\n\t  WELCOME TO CONTACT-MANAGEMENT SYSTEM ");
+    printf("\n\n\n\t\tMAIN MENU\n\t\t=========\n\t\t1) add a new Contact\n\t\t2) list all Contacts\n\t\t3) search for contact\n\t\t4) edit a Contact\n\t\t5) delete a Contact\n\t\t0) exit\n\t\t=================\n\t\t");
+    printf("enter the choice:");
     scanf("%d",&ch);
     switch(ch)
     {
     case 0:
-        printf("\n\n\t\tAre you sure you want to exit?");
+        printf("\n\n\t\tare you sure you want to exit?");
         break;
     case 1:
         system("cls");
@@ -32,18 +32,18 @@ main:
         for (;;)
         {
             fflush(stdin);
-            printf("To exit enter blank space in the name input\nName (Use identical):");
+            printf("to exit enter  space in the name input\nName (Use identical):");
             scanf("%[^\n]",&list.name);
             if(stricmp(list.name,"")==0 || stricmp(list.name," ")==0)
                 break;
             fflush(stdin);
-            printf("Phone:");
+            printf("phone:");
             scanf("%ld",&list.ph);
             fflush(stdin);
-            printf("address:");
+            printf("Address:");
             scanf("%[^\n]",&list.add);
             fflush(stdin);
-            printf("email address:");
+            printf("Email address:");
             gets(list.email);
             printf("\n");
             fwrite(&list,sizeof(list),1,fp);
@@ -53,7 +53,7 @@ main:
         /* $$$$$$ list of contacts $$$$$$  */
     case 2:
         system("cls");
-        printf("\n\t\t================================\n\t\t\tLIST OF CONTACTS\n\t\t================================\n\nName\t\tPhone No\t    Address\t\tE-mail ad.\n=================================================================\n\n");
+        printf("\n\t\t=======\n\t\t\tlist of contacts\n\t\t===========\n\nname\t\tphone No\t    Address\t\tE-mail ad.\n======\n\n");
         for(i=97; i<=122; i=i+1)
         {
             fp=fopen("contact.dll","r");
@@ -70,7 +70,7 @@ main:
             }
             if(found!=0)
             {
-                printf("=========================================================== [%c]-(%d)\n\n",i-32,found);
+                printf("=========== [%c]-(%d)\n\n",i-32,found);
                 getch();
             }
             fclose(fp);
@@ -82,13 +82,13 @@ main:
         do
         {
             found=0;
-            printf("\n\n\t..::CONTACT SEARCH\n\t===========================\n\t..::Name of contact to search: ");
+            printf("\n\n\t..::contact search\n\t=========\n\t..::name of contact to search: ");
             fflush(stdin);
             scanf("%[^\n]",&query);
             l=strlen(query);
             fp=fopen("contact.dll","r");
             system("cls");
-            printf("\n\n..::Search result for '%s' \n===================================================\n",query);
+            printf("\n\n..::Search result for '%s' \n================\n",query);
             while(fread(&list,sizeof(list),1,fp)==1)
             {
                 for(i=0; i<=l; i++)
@@ -100,17 +100,17 @@ main:
                     found++;
                     if (found%4==0)
                     {
-                        printf("..::Press any key to continue...");
+                        printf("..::press any key to continue...");
                         getch();
                     }
                 }
             }
             if(found==0)
-                printf("\n..::No match found!");
+                printf("\n..::no match found!");
             else
                 printf("\n..::%d match(s) found!",found);
             fclose(fp);
-            printf("\n ..::Try again?\n\n\t[1] Yes\t\t[0] No\n\t");
+            printf("\n ..::try again?\n\n\t[1] Yes\t\t[0] No\n\t");
             scanf("%d",&ch);
         }
         while(ch==1);
@@ -121,7 +121,7 @@ main:
         fp=fopen("contact.dll","r");
         ft=fopen("temp.dat","w");
         fflush(stdin);
-        printf("..::Edit contact\n===============================\n\n\t..::Enter the name of contact to edit:");
+        printf("..::edit contact\n========\n\n\t..::enter the name of contact to edit:");
         scanf("%[^\n]",name);
         while(fread(&list,sizeof(list),1,fp)==1)
         {
@@ -130,16 +130,16 @@ main:
         }
         fflush(stdin);
         printf("\n\n..::Editing '%s'\n\n",name);
-        printf("..::Name(Use identical):");
+        printf("..::name(Use identical):");
         scanf("%[^\n]",&list.name);
         fflush(stdin);
-        printf("..::Phone:");
+        printf("..::phone:");
         scanf("%ld",&list.ph);
         fflush(stdin);
-        printf("..::address:");
+        printf("..::Address:");
         scanf("%[^\n]",&list.add);
         fflush(stdin);
-        printf("..::email address:");
+        printf("..::Email address:");
         gets(list.email);
         printf("\n");
         fwrite(&list,sizeof(list),1,ft);
@@ -152,7 +152,7 @@ main:
     case 5:
         system("cls");
         fflush(stdin);
-        printf("\n\n\t..::DELETE A CONTACT\n\t==========================\n\t..::Enter the name of contact to delete:");
+        printf("\n\n\t..::delete contact\n\t=======\n\t..::enter the name of contact to delete:");
         scanf("%[^\n]",&name);
         fp=fopen("contact.dll","r");
         ft=fopen("temp.dat","w");
@@ -165,10 +165,10 @@ main:
         rename("temp.dat","contact.dll");
         break;
     default:
-        printf("Invalid choice");
+        printf("invalid choice");
         break;
     }
-    printf("\n\n\n..::Enter the Choice:\n\n\t[1] Main Menu\t\t[0] Exit\n");
+    printf("\n\n\n..::enter the Choice:\n\n\t[1] main menu\t\t[0] exit\n");
     scanf("%d",&ch);
     switch (ch)
     {
@@ -177,7 +177,7 @@ main:
     case 0:
         break;
     default:
-        printf("Invalid choice");
+        printf("invalid choice");
         break;
     }
     return 0;
