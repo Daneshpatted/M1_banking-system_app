@@ -8,20 +8,20 @@
 struct contact
 {
     long ph;
-    char name[20],add[20],email[30];
+    char Name[20],Add[20],email[30];
 } list;
-char query[20],name[20];
+char Query[20],Name[20];
 FILE *fp, *ft;
-int i,n,ch,l,found;
+int j,n,chr,l,Found;
 int main()
 {
 main:
     system("cls");    /* *****Main menu *******  */
     printf("\n\t  WELCOME TO CONTACT-MANAGEMENT SYSTEM ");
-    printf("\n\n\n\t\tMAIN MENU\n\t\t=========\n\t\t1) add a new Contact\n\t\t2) list all Contacts\n\t\t3) search for contact\n\t\t4) edit a Contact\n\t\t5) delete a Contact\n\t\t0) exit\n\t\t=================\n\t\t");
+    printf("\n\n\n\t\tMAIN MENU\n\t\t=========\n\t\t1) Add a new Contact\n\t\t2) list all Contacts\n\t\t3) search for contact\n\t\t4) edit a Contact\n\t\t5) delete a Contact\n\t\t0) exit\n\t\t=================\n\t\t");
     printf("enter the choice:");
-    scanf("%d",&ch);
-    switch(ch)
+    scanf("%d",&chr);
+    switch(chr)
     {
     case 0:
         printf("\n\n\t\tare you sure you want to exit?");
@@ -32,18 +32,18 @@ main:
         for (;;)
         {
             fflush(stdin);
-            printf("to exit enter  space in the name input\nName (Use identical):");
-            scanf("%[^\n]",&list.name);
-            if(stricmp(list.name,"")==0 || stricmp(list.name," ")==0)
+            printf("to exit enter  space in the Name input\nName (Use identical):");
+            scanf("%[^\n]",&list.Name);
+            if(stricmp(list.Name,"")==0 || stricmp(list.Name," ")==0)
                 break;
             fflush(stdin);
             printf("phone:");
             scanf("%ld",&list.ph);
             fflush(stdin);
             printf("Address:");
-            scanf("%[^\n]",&list.add);
+            scanf("%[^\n]",&list.Add);
             fflush(stdin);
-            printf("Email address:");
+            printf("Email Address:");
             gets(list.email);
             printf("\n");
             fwrite(&list,sizeof(list),1,fp);
@@ -53,93 +53,93 @@ main:
         /* $$$$$$ list of contacts $$$$$$  */
     case 2:
         system("cls");
-        printf("\n\t\t=======\n\t\t\tlist of contacts\n\t\t===========\n\nname\t\tphone No\t    Address\t\tE-mail ad.\n======\n\n");
-        for(i=97; i<=122; i=i+1)
+        printf("\n\t\t=======\n\t\t\tlist of contacts\n\t\t===========\n\nName\t\tphone No\t    Address\t\tE-mail ad.\n======\n\n");
+        for(j=97; j<=122; j=j+1)
         {
             fp=fopen("contact.dll","r");
             fflush(stdin);
-            found=0;
+            Found=0;
             while(fread(&list,sizeof(list),1,fp)==1)
             {
-                if(list.name[0]==i || list.name[0]==i-32)
+                if(list.Name[0]==j || list.Name[0]==j-32)
                 {
-                    printf("\nName\t: %s\nPhone\t: %ld\nAddress\t: %s\nEmail\t: %s\n",list.name,
-                           list.ph,list.add,list.email);
-                    found++;
+                    printf("\nName\t: %s\nPhone\t: %ld\nAddress\t: %s\nEmail\t: %s\n",list.Name,
+                           list.ph,list.Add,list.email);
+                    Found++;
                 }
             }
-            if(found!=0)
+            if(Found!=0)
             {
-                printf("=========== [%c]-(%d)\n\n",i-32,found);
+                printf("=========== [%c]-(%d)\n\n",j-32,Found);
                 getch();
             }
             fclose(fp);
         }
         break;
-        /* *******************search contacts**********************  */
+        /* $$$$$$$$****search contacts*****$$$$$$$  */
     case 3:
         system("cls");
         do
         {
-            found=0;
-            printf("\n\n\t..::contact search\n\t=========\n\t..::name of contact to search: ");
+            Found=0;
+            printf("\n\n\t..::contact search\n\t=========\n\t..::Name of contact to search: ");
             fflush(stdin);
-            scanf("%[^\n]",&query);
-            l=strlen(query);
+            scanf("%[^\n]",&Query);
+            l=strlen(Query);
             fp=fopen("contact.dll","r");
             system("cls");
-            printf("\n\n..::Search result for '%s' \n================\n",query);
+            printf("\n\n..::Search result for '%s' \n================\n",Query);
             while(fread(&list,sizeof(list),1,fp)==1)
             {
-                for(i=0; i<=l; i++)
-                    name[i]=list.name[i];
-                name[l]='\0';
-                if(stricmp(name,query)==0)
+                for(j=0; j<=l; j++)
+                    Name[j]=list.Name[j];
+                Name[l]='\0';
+                if(stricmp(Name,Query)==0)
             {
-                    printf("\n..::Name\t: %s\n..::Phone\t: %ld\n..::Address\t: %s\n..::Email\t: %s\n",list.name,list.ph,list.add,list.email);
-                    found++;
-                    if (found%4==0)
+                    printf("\n..::Name\t: %s\n..::Phone\t: %ld\n..::Address\t: %s\n..::Email\t: %s\n",list.Name,list.ph,list.Add,list.email);
+                    Found++;
+                    if (Found%4==0)
                     {
                         printf("..::press any key to continue...");
                         getch();
                     }
                 }
             }
-            if(found==0)
-                printf("\n..::no match found!");
+            if(Found==0)
+                printf("\n..::no match Found!");
             else
-                printf("\n..::%d match(s) found!",found);
+                printf("\n..::%d match(s) Found!",Found);
             fclose(fp);
             printf("\n ..::try again?\n\n\t[1] Yes\t\t[0] No\n\t");
-            scanf("%d",&ch);
+            scanf("%d",&chr);
         }
-        while(ch==1);
+        while(chr==1);
         break;
-        /* ********************edit contacts************************/
+        /* $$$$$$$$$$$$*********edit contacts*********$$$$$$$$$$$$ */
     case 4:
         system("cls");
         fp=fopen("contact.dll","r");
         ft=fopen("temp.dat","w");
         fflush(stdin);
-        printf("..::edit contact\n========\n\n\t..::enter the name of contact to edit:");
-        scanf("%[^\n]",name);
+        printf("..::edit contact\n========\n\n\t..::enter the Name of contact to edit:");
+        scanf("%[^\n]",Name);
         while(fread(&list,sizeof(list),1,fp)==1)
         {
-            if(stricmp(name,list.name)!=0)
+            if(stricmp(Name,list.Name)!=0)
               fwrite(&list,sizeof(list),1,ft);
         }
         fflush(stdin);
-        printf("\n\n..::Editing '%s'\n\n",name);
-        printf("..::name(Use identical):");
-        scanf("%[^\n]",&list.name);
+        printf("\n\n..::Editing '%s'\n\n",Name);
+        printf("..::Name(Use identical):");
+        scanf("%[^\n]",&list.Name);
         fflush(stdin);
         printf("..::phone:");
         scanf("%ld",&list.ph);
         fflush(stdin);
         printf("..::Address:");
-        scanf("%[^\n]",&list.add);
+        scanf("%[^\n]",&list.Add);
         fflush(stdin);
-        printf("..::Email address:");
+        printf("..::Email Address:");
         gets(list.email);
         printf("\n");
         fwrite(&list,sizeof(list),1,ft);
@@ -148,16 +148,16 @@ main:
         remove("contact.dll");
         rename("temp.dat","contact.dll");
         break;
-        /* ********************delete contacts**********************/
+        /* $$$$$$$**********delete contacts********$$$$$$$$ */
     case 5:
         system("cls");
         fflush(stdin);
-        printf("\n\n\t..::delete contact\n\t=======\n\t..::enter the name of contact to delete:");
-        scanf("%[^\n]",&name);
+        printf("\n\n\t..::delete contact\n\t=======\n\t..::enter the Name of contact to delete:");
+        scanf("%[^\n]",&Name);
         fp=fopen("contact.dll","r");
         ft=fopen("temp.dat","w");
         while(fread(&list,sizeof(list),1,fp)!=0)
-            if (stricmp(name,list.name)!=0)
+            if (stricmp(Name,list.Name)!=0)
                 fwrite(&list,sizeof(list),1,ft);
         fclose(fp);
         fclose(ft);
@@ -169,8 +169,8 @@ main:
         break;
     }
     printf("\n\n\n..::enter the Choice:\n\n\t[1] main menu\t\t[0] exit\n");
-    scanf("%d",&ch);
-    switch (ch)
+    scanf("%d",&chr);
+    switch (chr)
     {
     case 1:
         goto main;
