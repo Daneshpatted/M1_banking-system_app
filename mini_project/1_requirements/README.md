@@ -24,35 +24,35 @@ The project is titled as contact-management and developed using C language. It i
 
 ## SWOT ANALYSIS
 
-STRENGTHS ::
-easy to use application has all required features capable of storing data to a database faster access to data.
+STRENGTHS
+- Easy to use application has all required features capable of storing data to a database faster access to data.
 
-WEAKNESS ::
-lack of graphical user interface no option to change default database no scope of integration.
+WEAKNESS
+- Lack of graphical user interface no option to change default database no scope of integration.
 
-OPPORTUNITIES ::
-required by most of the people can add more features develop a gui.
+OPPORTUNITIES
+- Required by most of the people can add more features develop a gui.
 
-THREATS ::
-lot of competitors other better applications available with advanced
+THREATS
+- Lot of competitors other better applications available with advanced
 
 
 ## 4 W's and 1 H
 
  1) Who ?
-   anyone with an electronic device with a display and has a requirement of a contact management.
+  - Anyone with an electronic device with a display and has a requirement of a contact management.
 
  2) What ?
-     a contact management with features like add, delete, search, display and store data to a file.
+ - A contact management with features like add, delete, search, display and store data to a file.
 
  3) When ?
-     it can be used when there is no access to physical notebook and has lot of data to store.
+- It can be used when there is no access to physical notebook and has lot of data to store.
 
  4) Where ?
-      it can be used in all sectors irrespective of their field of work.
+- It can be used in all sectors irrespective of their field of work.
 
  5) How ?
-      this application was developed in C language to avoid hassle of maintaining bulky diaries.
+- This application was developed in C language to avoid hassle of maintaining bulky diaries.
       
       
    
