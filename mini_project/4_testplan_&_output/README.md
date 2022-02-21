@@ -51,3 +51,4 @@
 
 
 ## EXIT
+![exit](https://user-images.githubusercontent.com/98831772/155016833-5989a491-3544-44f8-9bcb-18405aff9732.PNG)
