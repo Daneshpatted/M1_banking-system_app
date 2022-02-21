@@ -47,6 +47,7 @@
 
 
 ## DELETE CONTACT
+![delete](https://user-images.githubusercontent.com/98831772/155016738-54dd3005-57c8-46ce-a8cf-d98b252e6ae6.PNG)
 
 
 ## EXIT
