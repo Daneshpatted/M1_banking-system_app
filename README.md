@@ -5,3 +5,6 @@
 
 
 [![Build-Linux](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/BuildLinux.yml/badge.svg)](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/BuildLinux.yml)
+
+
+[![Cppcheck](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/static_check.yml/badge.svg)](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/static_check.yml)
