@@ -11,3 +11,6 @@
 
 
 [![C/C++ CI](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/unity.yml/badge.svg)](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/unity.yml)
+
+
+[![Dynamiccheck](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/Dynamic-check.yml/badge.svg)](https://github.com/Daneshpatted/M1_contact-management_app/actions/workflows/Dynamic-check.yml)
