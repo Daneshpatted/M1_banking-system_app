@@ -1,10 +1,10 @@
-name: C/C++ CI
+name: unit Testing -unity
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Master ]
   pull_request:
-    branches: [ main ]
+    branches: [ Master ]
 
 jobs:
   build:
@@ -13,11 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: make Build_test
+      run: make -C mini_project/3_implementation
