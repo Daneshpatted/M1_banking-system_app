@@ -1,4 +1,4 @@
-name: Dynamic Check
+name: Dynamic check
 
 on:
   push:
