@@ -1,4 +1,4 @@
-name: C/C++ CI
+name:Dyanmic-check
 
 on:
   push:
