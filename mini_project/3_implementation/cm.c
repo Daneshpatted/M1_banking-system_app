@@ -1,18 +1,21 @@
-/*Contact Management System*/
-/*#include<stdio.h>*/
-struct contact
-{
-	char name[100];
-	char mobileno[100];
-	char email[200];
-};
+// #include<stdio.h>
+// #include<string.h>
+// #include<stdlib.h>
+
+
+// struct contact
+// {
+// 	char name[100];
+// 	char mobileno[100];
+// 	char email[200];
+// };
 #include "cm.h"
 struct contact s[100],temp;
 void add_contact();
 void validate();
-void delete_contact();
-void search_contact();
-void display_contact_contact();
+// int delete_contact(char *);
+// int search_contact();
+void display_contact();
 void sort();
 int choice,i,count=0,j=0,k=0,m,n,c=0;
 char temp_name[100],temp_mobile[100],temp_email[100];
@@ -32,18 +35,33 @@ int main()
 			}	
 			case 2: 
 			{
-				delete_contact();
+			    printf("Enter the Name\t");
+	            scanf("%s",temp_name);
+				if(delete_contact(temp_name,i,j,s,empty,c)){
+                    printf("\nContact Successfully Deleted!\n");
+                }
+                else{
+                    printf("\nContact Not found!\n");
+                }
 				break;	
 			}
 			case 3:
 			{
-				search_contact();
+                printf("Enter the Name\t");
+	            scanf("%s",temp_name);
+				if(search_contact(temp_name,i,j,s)){
+                    printf("Name : %s\nMobile No.: %s\nE-Mail : %s\n",s[i].name,s[i].mobileno,s[i].email);
+                }
+                else{
+                    printf("\n Contact Not Found\n");
+                }
 				break;	
 			}
 			case 4:
 			{
-				display_contact();
-				break;			
+                display_contact();
+				break;	
+       			
 			}
 			case 5:
 			{
@@ -130,44 +148,46 @@ void add_contact()
 	c++;
 	printf("\n\nContact saved successfully\n");
 }
-void delete_contact()
-{
-	printf("Enter the Name\t");
-	scanf("%s",temp_name);
-	for(i=0;i<j;i++)
-	{
-		if(!strcmp(s[i].name,temp_name))
-		{
-			strcpy(s[i].name,empty);
-			strcpy(s[i].mobileno,empty);
-			strcpy(s[i].email,empty);
-			printf("\nContact Successfully Deleted!\n");
-			c--;
-			break;	
-		}
-	}
-	if(i==j)
-	{
-		printf("\nContact Not found!\n");
-	}
-}
-void search_contact()
-{
-	printf("Enter the Name\t");
-	scanf("%s",temp_name);
-	for(i=0;i<j;i++)
-	{
-		if(!strcmp(s[i].name,temp_name))
-		{
-			printf("Name : %s\nMobile No.: %s\nE-Mail : %s\n",s[i].name,s[i].mobileno,s[i].email);
-			break;	
-		}	
-	}
-	if(i==j)
-	{
-		printf("\n Contact Not Found\n");	
-	}
-}
+// int delete_contact(char temp_name[100])
+// {
+// 	// printf("Enter the Name\t");
+// 	// scanf("%s",temp_name);
+// 	for(i=0;i<j;i++)
+// 	{
+// 		if(!strcmp(s[i].name,temp_name))
+// 		{
+// 			strcpy(s[i].name,empty);
+// 			strcpy(s[i].mobileno,empty);
+// 			strcpy(s[i].email,empty);
+// 			// printf("\nContact Successfully Deleted!\n");
+// 			c--;
+// 			return 1;
+// 		}
+// 	}
+// 	if(i==j)
+// 	{
+// 		// printf("\nContact Not found!\n");
+//         return 0;
+// 	}
+// }
+// int search_contact(char temp_name[100])
+// {
+// 	// printf("Enter the Name\t");
+// 	// scanf("%s",temp_name);
+// 	for(i=0;i<j;i++)
+// 	{
+// 		if(!strcmp(s[i].name,temp_name))
+// 		{
+// 			// printf("Name : %s\nMobile No.: %s\nE-Mail : %s\n",s[i].name,s[i].mobileno,s[i].email);
+//             return 1;
+// 		}	
+// 	}
+// 	if(i==j)
+// 	{
+// 		// printf("\n Contact Not Found\n");	
+//         return 0;
+// 	}
+//}
 void sort()
 {
 	for(m=1;m<j;m++)
