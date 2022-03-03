@@ -3,21 +3,14 @@
 
 
 
-![contact management](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/2_archietecture/contact%20management.png)
-
-
-
-
-
-
+![contact management](https://user-images.githubusercontent.com/98831772/154861317-4e041912-c9e1-4223-a20f-007167a7e142.png)
 
 
 
 # Project Diagram
 
+![Activity_Diagram](https://user-images.githubusercontent.com/98831772/154861345-a81a8991-79f6-43c8-b7a0-8d965b17d2bd.png)
 
-
-![Activity_Diagram](https://github.com/Daneshpatted/M1_contact-management_app/blob/main/mini%20project/2_archietecture/Activity_Diagram.png)
 
 
 

@@ -24,56 +24,55 @@ The project is titled as contact-management and developed using C language. It i
 
 ## SWOT ANALYSIS
 
-STRENGTHS ::
-easy to use application has all required features capable of storing data to a database faster access to data.
+STRENGTHS
+- Easy to use application has all required features capable of storing data to a database faster access to data.
 
-WEAKNESS ::
-lack of graphical user interface no option to change default database no scope of integration.
+WEAKNESS
+- Lack of graphical user interface no option to change default database no scope of integration.
 
-OPPORTUNITIES ::
-required by most of the people can add more features develop a gui.
+OPPORTUNITIES
+- Required by most of the people can add more features develop a gui.
 
-THREATS ::
-lot of competitors other better applications available with advanced
+THREATS
+- Lot of competitors other better applications available with advanced
 
 
 ## 4 W's and 1 H
 
  1) Who ?
-   anyone with an electronic device with a display and has a requirement of a contact management.
+  - Anyone with an electronic device with a display and has a requirement of a contact management.
 
  2) What ?
-     a contact management with features like add, delete, search, display and store data to a file.
+ - A contact management with features like add, delete, search, display and store data to a file.
 
  3) When ?
-     it can be used when there is no access to physical notebook and has lot of data to store.
+- It can be used when there is no access to physical notebook and has lot of data to store.
 
  4) Where ?
-      it can be used in all sectors irrespective of their field of work.
+- It can be used in all sectors irrespective of their field of work.
 
  5) How ?
-      this application was developed in C language to avoid hassle of maintaining bulky diaries.
+- This application was developed in C language to avoid hassle of maintaining bulky diaries.
       
       
    
  ##  High Level Requirements
  
-     	Description             	Status
-          
-      1) Main Menu                	Implemented
-      2) Data Storing            	Implemented
-      3) Data Retrieval         	Implemented
+|RDI| Description|	Status|
+|----|----|----|
+|HLR1|  Main Menu| 	Implemented|
+|HLR2| Data Storing| Implemented|
+|HLR3| Data Retrieval| Implemented|
 
 ## Low Level Requirement
 
-                Description                                                                                          Status                                                                                                
-1) New contact shall be added by providing all the needed information and stored into structure.	                	Implemented
-2)Reading contact data is be possible in 5 ways, first being by searching by first name, last name,               Implemented
- phone number email id and by printing all the contacts available		
-3)All the data should be stored into a file when user wants to do it.	                                             Implemented
-4)If user searches for an invalid key "Contact not found" message should be displayed                              Implemented
-5)User shall be able to save the files, if file already exists then it should append to file                       Implemented
-  and should not overwrite it and if file does not exists then it should create a new file
+|RID| Description|Status|
+|----|----|----|
+|LLR1| New contact shall be added by providing all the needed information and stored into structure.| Implemented|
+|LLR2| Reading contact data is be possible in 5 ways, first being by searching by first name, last name, phone number email id and by printing all the contacts available| Implemented|
+|LLR3| All the data should be stored into a file when user wants to do it.| Implemented|
+|LLR4| If user searches for an invalid key "Contact not found" message should be displayed| Implemented|
+|LLR5| User shall be able to save the files, if file already exists then it should append to file and should not overwrite it and if file does not exists then it should create a new file | Implemented|
 
 
 
